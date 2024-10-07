@@ -39,7 +39,7 @@ def download_high_quality_video(url, output_path="."):
             'format': 'best[ext=mp4]/best',
             'outtmpl': os.path.join(output_path, '%(title)s.%(ext)s'),
         }
-
+# This section is for fetching the video information
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         try:
             print("Fetching video information...")
